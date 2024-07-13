@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        vidaloka: ['Vidaloka', 'serif'],
+        Montserrat: ['Montserrat', 'serif'],
       },
     },
   },

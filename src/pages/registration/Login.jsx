@@ -81,16 +81,16 @@ const Login = () => {
     
 
     return (
-        <div className='flex justify-center items-center min-h-screen bg-pink-100'>
+        <div className='flex justify-center items-center min-h-screen bg-[#EAEBFF]'>
             {loading && <Loader />}
-            <div className="login_Form bg-white px-8 py-6 border border-pink-100 rounded-xl shadow-md w-full max-w-md m-2 relative">
+            <div className="login_Form bg-white px-8 py-6 border border-pink-100 rounded-xl shadow-md w-full max-w-md m-4 relative">
                 <Link to="/" className="absolute top-0 left-0 p-4">
-                    <svg className="w-6 h-6 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="w-6 h-6 text-[#433B58]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>
                 </Link>
                 <div className="mb-5">
-                    <h2 className='text-center text-2xl font-bold text-pink-600'>Login</h2>
+                    <h2 className='text-center text-2xl font-bold text-[#433B58]'>Login</h2>
                 </div>
 
                 <form onSubmit={userLoginFunction}>
@@ -101,7 +101,7 @@ const Login = () => {
                             placeholder='Email Address'
                             value={userLogin.email}
                             onChange={(e) => setUserLogin({ ...userLogin, email: e.target.value })}
-                            className='bg-pink-50 border border-pink-200 px-4 py-2 w-full rounded-md outline-none placeholder-gray-500'
+                            className='bg-[#EAEBFF] border border-pink-200 px-4 py-2 w-full rounded-md outline-none placeholder-gray-500'
                             autoComplete="email"
                         />
                     </div>
@@ -113,7 +113,7 @@ const Login = () => {
                             placeholder='Password'
                             value={userLogin.password}
                             onChange={(e) => setUserLogin({ ...userLogin, password: e.target.value })}
-                            className='bg-pink-50 border border-pink-200 px-4 py-2 w-full rounded-md outline-none placeholder-gray-500'
+                            className='bg-[#EAEBFF] border border-pink-200 px-4 py-2 w-full rounded-md outline-none placeholder-gray-500'
                             autoComplete="current-password"
                         />
                     </div>
@@ -121,7 +121,7 @@ const Login = () => {
                     <div className="mb-5">
                         <button
                             type='submit'
-                            className='bg-pink-500 hover:bg-pink-600 w-full text-white text-center py-2 font-bold rounded-md'
+                            className='bg-[#6A5889] hover:bg-[#433B58] w-full text-white text-center py-2 font-bold rounded-md'
                         >
                             Login
                         </button>
@@ -135,7 +135,7 @@ const Login = () => {
                 </div>
 
                 <div className="m-1">
-                    <h2 className='text-black font-bold flex justify-center'>Don't Have an account? <Link className='text-pink-700  mx-2 font-bold' to={'/signup'}>Signup</Link></h2>
+                    <h2 className='text-black font-bold flex justify-center'>Don't Have an account? <Link className='text-[#6A5889]  mx-2 font-bold' to={'/signup'}>Signup</Link></h2>
                 </div>
             </div>
         </div>

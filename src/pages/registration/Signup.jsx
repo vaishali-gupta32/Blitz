@@ -94,12 +94,12 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-pink-100">
-      {loading && <Loader />} {/* Display Loader if loading is true */}
+    <div className="flex justify-center items-center h-screen bg-[#EAEBFF]">
+      {loading && <Loader />} 
       <div className="signup_Form bg-white px-8 py-6 border border-pink-100 rounded-xl shadow-md max-w-md w-full m-2 relative">
         <Link to="/" className="absolute top-0 left-0 p-4">
           <svg
-            className="w-6 h-6 text-pink-500"
+            className="w-6 h-6 text-[#6A5889]"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -114,7 +114,7 @@ const Signup = () => {
           </svg>
         </Link>
         <div className="mb-5">
-          <h2 className="text-center text-2xl font-bold text-pink-500">
+          <h2 className="text-center text-2xl font-bold text-[#433B58]">
             Signup
           </h2>
         </div>
@@ -158,7 +158,7 @@ const Signup = () => {
           <div className="mb-5">
             <button
               type="submit"
-              className="bg-pink-500 hover:bg-pink-600 w-full text-white text-center py-2 font-bold rounded-md"
+              className="bg-[#6A5889] hover:bg-[#433B58] w-full text-white text-center py-2 font-bold rounded-md"
             >
               Signup
             </button>
@@ -171,7 +171,7 @@ const Signup = () => {
         <div>
           <h2 className="text-black text-center">
             Have an account?{" "}
-            <Link className="text-pink-500 font-bold" to="/login">
+            <Link className="text-[#6A5889] font-bold" to="/login">
               Login
             </Link>
           </h2>

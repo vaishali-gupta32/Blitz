@@ -29,18 +29,17 @@ const Category = () => {
     return (
         <div className="relative p-4 bg-[url('/bg.png')]">
              <div className="ml-2 mt-6 px-4" >
-                    <h2 className="text-4xl font-vidaloka text-left mb-10 text-[#FFFF00]">Shop by Categories</h2>
-                    
+                    <h2 className="text-4xl font-Montserrat mb-10 text-[#FFFF00]">Shop by Categories</h2>
                 </div>
             <div className="flex flex-col mt-6 mb-5 px-4">
                 {/* main 1 */}
-                <div className="grid grid-cols-2 gap-2 md:grid-cols-2 lg:grid-cols-5 grid-cols-5">
+                <div className="grid grid-cols-2 gap-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
                     {/* category  */}
                     {category.map((item, index) => {
                         return (
                             <div key={index} className="px-3">
                                 {/* Image  */}
-                                <div onClick={() => navigate(`/category/${item.name}`)} className="relative w-10 h-40 lg:w-60 lg:h-96 max-w-xs overflow-hidden cursor-pointer mb-4">
+                                <div onClick={() => navigate(`/category/${item.name}`)} className="relative w-full h-40 lg:w-full lg:h-96 max-w-xs overflow-hidden cursor-pointer mb-4">
                                     <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
                                     <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center py-2">
                                         <h1 className="text-lg lg:text-xl font-medium">{item.name}</h1>
@@ -52,12 +51,9 @@ const Category = () => {
                 </div>
             </div>
 
-            {/* marquee */}
             <div className="absolute bottom-0 left-0 right-0 bg-[#433B58] text-white">
                 <marquee className="py-2">Get up to 30% off on your first order &#x2022; Get up to 30% off on your first order &#x2022; Get up to 30% off on your first order &#x2022; Get up to 30% off on your first order &#x2022; Get up to 30% off on your first order</marquee>
             </div>
-
-            {/* style */}
             <style dangerouslySetInnerHTML={{ __html: "\n.hide-scroll-bar {\n  -ms-overflow-style: none;\n  scrollbar-width: none;\n}\n.hide-scroll-bar::-webkit-scrollbar {\n  display: none;\n}\n" }} />
         </div>
     );

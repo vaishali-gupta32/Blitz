@@ -32,13 +32,12 @@ const Navbar = () => {
 
   const cartItems = useSelector((state) => state.cart);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isCategoriesDropdownOpen, setIsCategoriesDropdownOpen] = useState(false);
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
 
   const navList = (
-    <ul className="flex space-x-4 items-center text-white font-vidaloka text-lg mx-auto">
+    <ul className="flex flex-wrap sm:flex-nowrap space-x-4 sm:space-x-4 sm:space-y-0 items-center text-white font-Montserrat font-bold text-lg mx-auto">
       {['Men', 'Women', 'Kids','Accessories','MERCH'].map(category => (
-        <li className="hover:text-gray-700 transition duration-300" key={category}>
+        <li className="hover:text-[#FFFF00] transition duration-300" key={category}>
           <Link to={`/category/${category}`} onClick={() => setIsMobileMenuOpen(false)}>{category}</Link>
         </li>
       ))}

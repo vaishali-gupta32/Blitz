@@ -21,13 +21,13 @@ function HeroSection() {
   const targetDate = new Date(Date.now() + 1000 * 60 * 60 * 38); // 1 day 14 hours from now
 
   return (
-    <div className="w-full py-4 bg-[#2E2646]">
+    <div className="w-full h-64 sm:h-80 md:h-96 lg:h-[650px] py-2 bg-[#2E2646]">
       <Carousel>
         <Carousel.Item>
           <div className="relative">
             <Link to="/category/Mens">
               <img
-                className="d-block w-full "
+                className="d-block w-full lg:h-[650px]"
                  src="/slider_image_1.png"
                 alt="First slide"
               />
@@ -38,25 +38,16 @@ function HeroSection() {
         <div className="relative">
           <Link to="/category/Womens">
             <img
-              className="d-block w-full "
+              className="d-block w-full lg:h-[650px]"
               src="/slider_image_2.png"
               alt="Second slide"
             />
           </Link>
-          <div className="absolute bottom-40 left-1/2 transform -translate-x-1/2">
+            <div className="absolute bottom-20 md:bottom-40 lg:bottom-40 xl:bottom-40 left-1/2 transform -translate-x-1/2">
               <Countdown date={targetDate} renderer={renderer} />
             </div>
             </div>
         </Carousel.Item>
-        {/*<Carousel.Item>
-          <Link to="/category/Beauty">
-            <img
-              className="d-block w-full "
-              src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-23062024-MainBannerDailyChanging-Z1-P7-Maybeline-Faces-Canada-Upto50.jpg"
-              alt="Third slide"
-            />
-          </Link>
-        </Carousel.Item>*/}
       
       </Carousel>
     </div>

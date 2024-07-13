@@ -80,7 +80,7 @@ const CategoryPage = () => {
                                                             ) : (
                                                                 <button
                                                                     onClick={() => addCart(item)}
-                                                                    className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-purple-500 hover:to-pink-500 text-white py-2 px-4 rounded-lg font-bold transition-all duration-300 ease-in-out w-full">
+                                                                    className="bg-gradient-to-r from-[#6A5889] to-purple-500 hover:from-purple-500 hover:to-[#6A5889] text-white py-2 px-4 rounded-lg font-bold transition-all duration-300 ease-in-out w-full">
                                                                     Add To Cart
                                                                 </button>
                                                             )}
