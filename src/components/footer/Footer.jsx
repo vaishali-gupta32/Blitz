@@ -3,7 +3,7 @@ import {
   faYoutube,
   faFacebook,
   faInstagram,
-  faLinkedin
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -40,14 +40,6 @@ const Footer = () => {
         rel="noreferrer"
       >
         <FontAwesomeIcon className="w-7 h-7 md:w-8 md:h-8" icon={faLinkedin} size="2x" />
-      </a>
-      <a
-        href="#"
-        target="_blank"
-        className="transition-colors  bg-transparent block text-center text-white py-2 px-2 text-base  hover:text-blue-400 ease-linear hover:ease-in"
-        rel="noreferrer"
-      >
-        <img className="w-7 h-7 md:w-8 md:h-8" src="./x-twitter.svg" />
       </a>
       <a
         href="#"

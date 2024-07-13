@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import toast from "react-hot-toast";
 import { clearCart } from "../../redux/cartSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleUser, faShoppingBag, faPlusSquare } from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser, faShoppingBag, faPlusSquare, faBomb } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const user = localStorage.getItem('users');
@@ -108,6 +108,12 @@ const Navbar = () => {
           <div className="flex items-center text-white">
           {/*<Link to={'/cart'} className="text-white hover:text-gray-300 transition duration-300">*/}
             <FontAwesomeIcon icon={faPlusSquare} className="h-6 w-6" />
+          {/*</Link>*/}
+          
+          </div>
+          <div className="flex items-center text-white">
+          {/*<Link to={'/cart'} className="text-white hover:text-gray-300 transition duration-300">*/}
+            <FontAwesomeIcon icon={faBomb} className="h-6 w-6" />
           {/*</Link>*/}
           
           </div>
