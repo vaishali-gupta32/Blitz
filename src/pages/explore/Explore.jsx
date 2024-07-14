@@ -83,6 +83,9 @@ const App = () => {
 
   return (
     <Layout>
+      <div className="ff">
+        <h4>Fashionista Frenzy!</h4>
+        </div>
     <div className="app">
       <div className="stories">
         {stories.map((story, index) => (
