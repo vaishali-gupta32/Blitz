@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { db, collection, getDocs, updateDoc, doc, arrayUnion, increment } from './firebase';
 import { FaHeart, FaComment } from 'react-icons/fa';
 import './explore.css';
+import Layout from '../../components/layout/Layout';
 
 const App = () => {
   const [stories, setStories] = useState([]);
@@ -81,6 +82,7 @@ const App = () => {
   };
 
   return (
+    <Layout>
     <div className="app">
       <div className="stories">
         {stories.map((story, index) => (
@@ -136,6 +138,7 @@ const App = () => {
         ))}
       </div>
     </div>
+    </Layout>
   );
 };
 
