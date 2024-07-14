@@ -41,7 +41,7 @@ const CategoryPage = () => {
                     <h1 className="text-center mb-5 text-3xl font-bold text-gray-800 first-letter:uppercase">{categoryname}</h1>
                 </div>
 
-                {/* Main */}
+                {/* Flexbox */}
                 {loading ?
                     <div className="flex justify-center">
                         <Loader />

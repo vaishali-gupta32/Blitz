@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import toast from "react-hot-toast";
 import { clearCart } from "../../redux/cartSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleUser, faShoppingBag, faPlusSquare, faBomb } from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser, faShoppingBag, faBomb } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const user = localStorage.getItem('users');
@@ -65,6 +65,11 @@ const Navbar = () => {
           </Link>
           <span className="ml-1 text-white">({cartItems.length})</span>
           </div>
+          <div className="flex items-center text-white">
+          <Link to={'/explore'} className="text-white hover:text-gray-300 transition duration-300">
+            <FontAwesomeIcon icon={faBomb} className="h-6 w-6" />
+          </Link>
+          </div>
           <div className="relative">
             <button 
               className="text-white hover:text-gray-300 transition duration-300 focus:outline-none" 
@@ -91,11 +96,6 @@ const Navbar = () => {
                         <Link to={'/user-dashboard'} className="block px-4 py-2" onClick={() => setIsProfileDropdownOpen(false)}>User</Link>
                       </li>
                     )}
-                    {parsedUser.role.toLowerCase() === "admin" && (
-                      <li className="hover:bg-gray-200 transition duration-200">
-                        <Link to={'/admin-dashboard'} className="block px-4 py-2" onClick={() => setIsProfileDropdownOpen(false)}>Admin</Link>
-                      </li>
-                    )}
                     <li className="cursor-pointer hover:bg-gray-200 transition duration-200 block px-4 py-2" onClick={logout}>
                       Logout
                     </li>
@@ -103,18 +103,6 @@ const Navbar = () => {
                 )}
               </ul>
             )}
-          </div>
-          <div className="flex items-center text-white">
-          {/*<Link to={'/cart'} className="text-white hover:text-gray-300 transition duration-300">*/}
-            <FontAwesomeIcon icon={faPlusSquare} className="h-6 w-6" />
-          {/*</Link>*/}
-          
-          </div>
-          <div className="flex items-center text-white">
-          {/*<Link to={'/cart'} className="text-white hover:text-gray-300 transition duration-300">*/}
-            <FontAwesomeIcon icon={faBomb} className="h-6 w-6" />
-          {/*</Link>*/}
-          
           </div>
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -169,11 +157,6 @@ const Navbar = () => {
                 {parsedUser.role.toLowerCase() === "user" && (
                   <li className="hover:text-gray-300 transition duration-300">
                     <Link to={'/user-dashboard'} onClick={() => setIsProfileDropdownOpen(false)}>User</Link>
-                  </li>
-                )}
-                {parsedUser.role.toLowerCase() === "admin" && (
-                  <li className="hover:text-gray-300 transition duration-300">
-                    <Link to={'/admin-dashboard'} onClick={() => setIsProfileDropdownOpen(false)}>Admin</Link>
                   </li>
                 )}
                 <li className="cursor-pointer hover:text-gray-300 transition duration-300" onClick={logout}>

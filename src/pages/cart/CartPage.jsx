@@ -26,8 +26,6 @@ const CartPage = () => {
         dispatch(decrementQuantity(id));
     };
 
-    // const cartQuantity = cartItems.length;
-
     const cartItemTotal = cartItems.map(item => item.quantity).reduce((prevValue, currValue) => prevValue + currValue, 0);
 
     const cartTotal = cartItems.map(item => item.price * item.quantity).reduce((prevValue, currValue) => prevValue + currValue, 0);

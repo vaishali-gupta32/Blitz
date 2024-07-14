@@ -4,7 +4,7 @@ import { toast } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { auth, fireDB } from '../../firebase/FirebaseConfig';
 import { collection, getDocs, query, where, addDoc, Timestamp } from 'firebase/firestore';
-import signingoogle from '../../assets/signingoogle.png'; // Adjust the import path according to your project structure
+import signingoogle from '../../assets/signingoogle.png';
 
 const Googleauthpage = () => {
     const navigate = useNavigate();
@@ -24,12 +24,11 @@ const Googleauthpage = () => {
             });
     
             if (!userData) {
-                // New user, add to Firestore
                 const newUser = {
                     name: user.displayName,
                     email: user.email,
                     uid: user.uid,
-                    role: "user", // default role
+                    role: "user", // default 
                     time: Timestamp.now(),
                     date: new Date().toLocaleString("en-US", {
                         month: "short",
@@ -47,8 +46,6 @@ const Googleauthpage = () => {
             const userRole = userData.role.toLowerCase();
             if (userRole === "user") {
                 navigate('/');
-            } else if (userRole === "admin") {
-                navigate('/admin-dashboard');
             } else {
                 toast.error("Invalid role");
             }

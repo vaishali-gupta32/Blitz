@@ -25,7 +25,7 @@ const SearchBar = () => {
 
     return (
         <div className="relative">
-            {/* Search input */}
+            {/* input box */}
             <input
                 type="text"
                 placeholder='Search Product'

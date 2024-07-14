@@ -118,7 +118,7 @@ function MyState({ children }) {
             getAllUser,
             currentUser,
             setCurrentUser,
-            getAllProductFunction // Ensure this is included in the context value
+            getAllProductFunction 
         }}>
             {children}
         </MyContext.Provider>

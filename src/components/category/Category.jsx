@@ -32,7 +32,7 @@ const Category = () => {
                     <h2 className="text-4xl font-Montserrat mb-10 text-[#FFFF00]">Shop by Categories</h2>
                 </div>
             <div className="flex flex-col mt-6 mb-5 px-4">
-                {/* main 1 */}
+                {/* main */}
                 <div className="grid grid-cols-2 gap-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
                     {/* category  */}
                     {category.map((item, index) => {
