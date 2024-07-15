@@ -8,6 +8,7 @@ Welcome to Blitz, the ultimate fashion retail experience designed to captivate a
 - [Problem Statement](#problem-statement)
 - [Solution](#solution)
 - [Key Features](#key-features)
+- [Screenshots](#screenshots)
 - [Technology Stack](#technology-stack)
 - [Team Members](#team-members)
 - [Future Enhancements](#future-enhancements)
@@ -41,6 +42,19 @@ Blitz addresses these challenges by providing a platform that combines social me
 5. **Engagement & Gamification:** Weekly contests, virtual events, and workshops. Earn points for activities redeemable for rewards.
 6. **User Dashboard:** Manage profile, view history, update preferences, and see top user achievements.
 7. **Seamless Shopping:** Add items to cart and wishlist from posts with easy checkout and multiple payment options.
+
+## Screenshots
+
+Sneak Peek into Blitz - 
+
+### Weekly Contests - Fashionista 
+
+![image](https://github.com/user-attachments/assets/12863367-d7f0-4ae8-8a2e-58df23db22e1)
+
+### Explore trending Posts and Stories
+
+![image](https://github.com/user-attachments/assets/7dab51fe-81e7-4342-ac89-01d87bb10cac)
+
 
 ## Technology Stack
 
